@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;0,900;1,300;1,600;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
+*,
+html {
+  scroll-behavior: smooth !important;
+  font-family: "Open Sans";
+}
+:root {
+  --main-light-color: white;
+  --main-dark-color: rgb(48, 48, 48);
+  --main-green-color: rgb(60, 106, 115);
+  --secondary-green-color: rgb(108, 190, 180);
+  --third-green-color: rgb(139, 232, 226);
+  --main-red-color: #f94880;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.blog p {
+  padding-bottom: 15px;
+}
+.blog a {
+  color: var(--main-red-color);
+  font-weight: 500;
+}
+.blog a:hover {
+  text-decoration: underline;
+}
+section {
+  background-color: rgba(237, 237, 237, 0.1);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  background-color: transparent;
+  height: 70px;
+  padding: 0 0 0 34px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  z-index: 999;
+}
+.header.inverted {
+  background-color: var(--main-red-color);
+  box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  color: white;
+}
+
+.client-logo {
+  object-fit: contain;
+  filter: grayscale(100%);
+}
+
+.workshops-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+section {
+  padding: 2em 3em;
+}
+
+section#home {
+  padding: 0;
+}
+
+@media screen and (max-width: 999px) {
+  section {
+    padding: 1em;
+  }
+}
+.workshops-container .tile {
+  margin: 0.5%;
+}
+.workshops-container .tile:nth-child(1),
+.workshops-container .tile:nth-child(2),
+.workshops-container .tile:nth-child(3) {
+  width: 31.6%;
+  height: calc(90vw * 0.316);
+  padding-bottom: 28px;
+  padding-left: 20px;
+  padding-top: 10vw;
+}
+
+.workshops-container .tile:nth-child(4),
+.workshops-container .tile:nth-child(5) {
+  padding-top: 20vw;
+  padding-left: 60px;
+  padding-bottom: 28px;
+  width: 48%;
+  height: calc(90vw * 0.48);
+}
+
+.workshop-big-title,
+.workshop-small-title {
+  font-weight: 600;
+}
+
+.workshops-container .tile:nth-child(1) .workshop-small-title,
+.workshops-container .tile:nth-child(2) .workshop-small-title,
+.workshops-container .tile:nth-child(3) .workshop-small-title {
+  font-size: 1.2em;
+}
+
+.workshops-container .tile:nth-child(1) .workshop-big-title,
+.workshops-container .tile:nth-child(2) .workshop-big-title,
+.workshops-container .tile:nth-child(3) .workshop-big-title {
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+
+.workshops-container .tile:nth-child(4) .workshop-small-title,
+.workshops-container .tile:nth-child(5) .workshop-small-title {
+  font-size: 2em;
+}
+
+.workshops-container .tile:nth-child(4) .workshop-big-title,
+.workshops-container .tile:nth-child(5) .workshop-big-title {
+  font-size: 3em;
+  margin-bottom: 16px;
+}
+
+.workshop {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.workshop-button {
+  background-color: white;
+  border-radius: 9.4px;
+  padding: 10px 18px;
+  font-size: 12px;
+  margin-top: 12px;
+}
+.workshop1 .workshop-title-wrapper,
+.workshop2 .workshop-title-wrapper,
+.workshop3 .workshop-title-wrapper {
+  line-height: 1.5em;
+}
+.workshop4 .workshop-title-wrapper,
+.workshop5 .workshop-title-wrapper {
+  line-height: 1.8em;
+}
+
+/**/
+
+@media screen and (max-width: 999px) {
+  .workshops-container {
+    overflow: scroll;
+  }
+  .workshops-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .workshops-container .tile:nth-child(1),
+  .workshops-container .tile:nth-child(2),
+  .workshops-container .tile:nth-child(3),
+  .workshops-container .tile:nth-child(4),
+  .workshops-container .tile:nth-child(5) {
+    min-width: 37vh;
+    min-height: 37vh;
+    height: calc(90vw * 0.316);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 28px;
+    padding-left: 20px;
+    padding-top: 10vw;
+    width: 31.6%;
+  }
+
+  .workshops-container .tile:nth-child(4) .workshop-big-title,
+  .workshops-container .tile:nth-child(5) .workshop-big-title {
+    font-size: 2em;
+    margin-bottom: 8px;
+  }
+  .workshops-container .tile:nth-child(4) .workshop-small-title,
+  .workshops-container .tile:nth-child(5) .workshop-small-title {
+    font-size: 1.2em;
+  }
+  .workshop-title-wrapper {
+    line-height: 1.6em;
+  }
+}
+
+.workshop-title > div {
+  font-weight: 700;
+  line-height: 0.8em;
+}
+
+.menu-mobile-wrapper {
+  transition: 800ms;
+}
+
+.block-scroll {
+  overflow: hidden;
+}
+
+.workshop-title-big {
+  font-size: 60px;
+  margin: 30px;
+}
+.workshop-title-mid {
+  font-size: 40px;
+  margin: 28px;
+}
+.workshop-title-small {
+  font-size: 30px;
+  margin: 15px;
+}
+.workshop-subtitle-big {
+  font-size: 75px;
+  margin: 30px;
+}
+.workshop-subtitle-mid {
+  font-size: 45px;
+  margin: 28px;
+}
+.workshop-subtitle-small {
+  font-size: 30px;
+  margin: 15px;
+}
+.tile-container-big {
+  width: 650px;
+  height: 650px;
+}
+.tile-container-mid {
+  width: 485px;
+  height: 485px;
+}
+.tile-container-small {
+  width: 315px;
+  height: 315px;
+}
+.workshop ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.workshop ul li::before {
+  content: "\25A0";
+  font-size: 20px;
+  margin-right: 10px;
+  color: #f94880;
+}
+.btn {
+  background-color: #f94880;
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #f94880;
+}
+.btn:hover {
+  color: #f94880;
+  background-color: white;
+}
+
+#modal-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal:empty {
+  display: none;
+}
+
+#modal div.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px;
+  background: white;
+}
+
+#modal .buttons button {
+  display: inline-block;
+  margin-right: 15px;
+}
+.close-modal {
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.social-link {
+  color: var(--main-red-color);
+}
+
+.social-link:hover {
+  color: var(--main-green-color);
+}
+
+input.disclaimer-checkbox {
+  transform: scale(1.4);
+}
