@@ -7,6 +7,7 @@ import Head from "next/head";
 import { home } from "../data/seo";
 import PreSection from "../components/PreSection";
 import AgendarSesion from "../components/sections/AgendarSesion";
+import Certificados from "../components/sections/Certificados";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       </Head>
       <Hero />
       <PreSection/>
+      <Certificados/>
       <Nosotros />
       <Workshops />
       <Clientes />

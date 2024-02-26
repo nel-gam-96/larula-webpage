@@ -16,7 +16,7 @@ const Hero = () => {
         backgroundImage="/assets/hero-bg.png"
         backgroundSize="cover"
         minHeight={isMobile ? "100vh" : "90vh"}
-        justifyContent="space-evenly"
+        justifyContent={isMobile?"center":"space-evenly"}
         alignItems="center"
         flexDirection={isMobile ? "column" : "row"}
       >
@@ -37,12 +37,12 @@ const Hero = () => {
           display={isMobile ? "flex" : "block"}
           flexDirection={isMobile ? "column" : "row"}
           justifyContent={isMobile ? "space-around" : "auto"}
-          w={isMobile ? "100%" : "370px"}
+          w={isMobile ? "100%" : "40%"}
           h={isMobile ? "auto" : "553px"}
           m={isMobile ? "0" : "0 0 0 80px "}
           p={isMobile ? "40px 10px" : "0"}
         >
-          <Text variant="kitTitle" mt="6.5em" fontSize="2xl">
+          <Text variant="kitTitle" mt={isMobile?"":"5em"} fontSize={isMobile?"2xl":"40px"}>
             ENTRENAMIENTO Y <br/> CONSULTORÍAS<br/> APRENDER HACIENDO
           </Text>
           <Text variant="kitParraph">{hero.description}</Text>
@@ -57,7 +57,7 @@ const Hero = () => {
             <SmallContactForm setSentEmail={setSentEmail} />
           )} */}
         </Box>
-        <Flex flexDirection="column">
+        <Flex flexDirection="column" justifyContent={isMobile?"flex-start":""}>
           <Box
             position="absolute"
             top="16vh"
@@ -110,7 +110,7 @@ const Hero = () => {
               height={12}
             />
           </Box>
-          <Box display={isMobile ? "block" : "block"} mt="4em">
+          <Box display={isMobile ? "block" : "block"} mt={isMobile?"":"6.5em"}>
             {/* <Image
               style={{ borderRadius: "16px" }}
               src={`/images/hero/${hero.picture}`}
@@ -118,49 +118,7 @@ const Hero = () => {
               width={436}
               height={290}
             /> */}
-            <video width={436} height={290} style={{ borderRadius: "16px" }} src="/videos/rula_clip.mp4" autoPlay loop muted/>
-
-            
-          </Box>
-          <Box mt={isMobile ? "-6em" : "0"} ml={isMobile ? "0" : "0"}>
-            <Flex
-              // m="10px"
-              h="50px"
-              alignItems="center"
-              mt={isMobile ? "2.5em" : "1.5em"}
-              // ml={isMobile ? "-5.5em" : "5em"}
-              w="100%"
-              mx="auto"
-              justifyContent=""
-            >
-              {/* <Box top="10px" right="10px" position="relative">
-                <Image
-                  position="absolute"
-                  src="/assets/pink-postit.svg"
-                  alt="post-its"
-                  width={42}
-                  height={42}
-                />
-              </Box> */}
-              {/* <Text
-                fontFamily="Poppins"
-                mr="20px"
-                textAlign="center"
-                fontWeight="900"
-              >
-                Con el apoyo de:
-              </Text> */}
-              {/* <Box position="relative" w="95px" h="48px" display="block">
-                <Image
-                  src="/images/logos/post-it_logo_desktop.svg"
-                  alt="post-it"
-                  fill
-                />
-              </Box>
-              <Box position="relative" w="150px" h="48px" display="block">
-                <Image src="/images/logos/edulink.png" alt="post-it" fill />
-              </Box> */}
-            </Flex>
+            <video width={436} height={290} style={{ borderRadius: "16px" }} src="/videos/rula_clip.mp4" autoPlay loop muted/>    
           </Box>
         </Flex>
       </Flex>
