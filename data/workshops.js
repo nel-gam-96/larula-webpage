@@ -1,7 +1,7 @@
 export const workshopsIntro = {
-  title: "Nuestros talleres",
+  title: "Nuestros temáticas",
   description:
-    "Nuestras sesiones fortalecen las habilidades de los colaboradores y dan soporte en la resolución de desafíos o tomas de decisiones favoreciendo la innovación y el trabajo en equipo en las grandes empresas y startups.",
+    "La duración de cada uno de los contenidos varía según las características de cada empresa.",
 };
 
 export const workshops = [

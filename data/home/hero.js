@@ -1,6 +1,6 @@
 export const hero = {
   title: "ENTRENAMIENTO Y\n CONSULTORÍAS APRENDER HACIENDO",
   description:
-    "Desarrolla en tus equipos de trabajo las habilidades necesarias para las empresas de hoy, en un formato colaborativo, ágil, práctico y dinámico. ¡Pon el conocimiento en Movimiento!",
+    "Capacita tus equipos y desarrolla entregables accionables para tu organización. Sesiones ágiles, creativas y colaborativas. Metodología Aprender Haciendo",
   picture: "hero-picture.jpeg",
 };

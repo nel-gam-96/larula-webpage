@@ -26,7 +26,7 @@ export default function Home() {
       <Hero />
       <PreSection/>
       <Certificados/>
-      <Nosotros />
+      {/* <Nosotros /> */}
       <Workshops />
       <Clientes />
       <AgendarSesion/>

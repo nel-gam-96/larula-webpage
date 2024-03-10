@@ -8,21 +8,21 @@ export default function PreSection() {
   const isMobile = useViewport();
 
     return <>
-       <Box bg="#EEEEEE" py={8} display="flex" justifyContent={"center"} gap={isMobile?4:0} alignItems={"center"} flexDirection={isMobile?"column":"row"}>
+       <Box bg="#EEEEEE" py={8} display="flex" justifyContent={"space-evenly"} gap={isMobile?4:0} alignItems={"center"} flexDirection={isMobile?"column":"row"}>
             <Box display={"flex"} position={"relative"} justifyContent={"center"} alignItems={"flex-start"} w={"200px"} gap={"4px"}>
-                <Text style={{position:'relative',top:"-25px",left:"0px",fontSize:"50px"}}>+</Text>
+                <Text style={{position:'relative',top:"-10px",left:"0px",fontSize:"60px"}}>+</Text>
                 <Text style={{fontSize:"50px",color:"black"}}>20</Text>
                 <Text style={{fontSize:"12px",paddingTop:"16px"}}>Empresas asesoradas y sumando</Text>
             </Box>
             <Box display={"flex"} position={"relative"} justifyContent={"center"} alignItems={"flex-start"} w={"200px"} gap={"4px"}>
-                <Text style={{position:'relative',top:"-25px",left:"0px",fontSize:"50px"}}>+</Text>
+                <Text style={{position:'relative',top:"-10px",left:"0px",fontSize:"60px"}}>+</Text>
                 <Text style={{fontSize:"50px",color:"black"}}>3K</Text>
                 <Text style={{fontSize:"12px",paddingTop:"16px"}}>Persona capacitadas</Text>
             </Box>
             <Box display={"flex"} position={"relative"} justifyContent={"center"} alignItems={"flex-start"} w={"200px"} gap={"4px"}>
-                <Text style={{position:'relative',top:"-25px",left:"0px",fontSize:"50px"}}>+</Text>
+                <Text style={{position:'relative',top:"-10px",left:"0px",fontSize:"60px"}}>+</Text>
                 <Text style={{fontSize:"50px",color:"black"}}>8</Text>
-                <Text style={{fontSize:"12px",paddingTop:"16px"}}>Años en el ecosistema de emprendimiento </Text>
+                <Text style={{fontSize:"12px",paddingTop:"16px"}}>Años creciendo en el ecosistema de emprendimiento </Text>
             </Box>
             <Flex
               // m="10px"
@@ -30,7 +30,9 @@ export default function PreSection() {
               alignItems="center"
               // ml={isMobile ? "-5.5em" : "5em"}
               //mx="auto"
-              justifyContent=""
+              justifyContent="center"
+              gap={4}
+              flexDirection={isMobile?"column":"row"}
             >
               {/* <Box top="10px" right="10px" position="relative">
                 <Image
@@ -55,8 +57,11 @@ export default function PreSection() {
                   fill
                 />
               </Box>
-              <Box position="relative" w="150px" h="48px" display="block">
+              <Box position="relative" w="150px" h="46px" display="block" top={"4px"} left={"-7px"}>
                 <Image src="/images/logos/edulink.png" alt="edulink" fill />
+              </Box>
+              <Box position="relative" w="60px" h="60px" display="block">
+                <Image src="/images/logos/acredita.png" alt="edulink" fill />
               </Box>
             </Flex>
        </Box>

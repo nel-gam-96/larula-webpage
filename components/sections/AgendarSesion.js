@@ -8,16 +8,17 @@ export default function AgendarSesion() {
 
     return <>
         <section className="section">
-            <Box display={"flex"} flexDir={isMobile?"column":"row"} w={"full"} justifyContent={isMobile?"flex-start":"center"} alignItems={isMobile?"center":"flex-start"} gap={4}>
+            <Box display={"flex"} flexDir={isMobile?"column":"row"} w={"full"} justifyContent={isMobile?"flex-start":"center"} alignItems={isMobile?"center":"center"} gap={4}>
                 <Box maxW={isMobile?"":"50%"}>
-                    <Text style={{fontWeight:"600",fontSize:isMobile?"24px":"32px"}}>
+                    {/* <Text style={{fontWeight:"600",fontSize:isMobile?"24px":"32px"}}>
                         Sesiones de mentoría
-                    </Text>
+                    </Text> */}
                     <Text style={{fontSize:isMobile?"32px":"55px"}}>
                         AGENDA TU SESIÓN
                     </Text>
-                    <Text style={{fontSize:"16px"}}>
-                    Supera tus desafíos con la ayuda de un mentor. Nuestros mentores te brindarán una perspectiva fresca y un enfoque estratégico para resolver tus osbtáculos  ¡Agenda tu sesión uno a uno hoy mismo y comienza a impulsar tu carrera o negocio.
+                    <Text style={{fontSize:"16px"}} textAlign={"justify"} maxW={"80%"}>
+                    Vive la experiencia de capacitación corporativa Aprender Haciendo. 
+                    Déjanos tus datos y nos pondremos en contacto contigo en el menor tiempo posible.
                     </Text>
                 </Box>
                 <Box>

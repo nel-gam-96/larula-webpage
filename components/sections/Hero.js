@@ -15,7 +15,7 @@ const Hero = () => {
       <Flex
         backgroundImage="/assets/hero-bg.png"
         backgroundSize="cover"
-        minHeight={isMobile ? "100vh" : "90vh"}
+        minHeight={isMobile ? "100vh" : "50vh"}
         justifyContent={isMobile?"center":"space-evenly"}
         alignItems="center"
         flexDirection={isMobile ? "column" : "row"}
@@ -42,10 +42,11 @@ const Hero = () => {
           m={isMobile ? "0" : "0 0 0 80px "}
           p={isMobile ? "40px 10px" : "0"}
         >
-          <Text variant="kitTitle" mt={isMobile?"":"5em"} fontSize={isMobile?"2xl":"40px"}>
-            ENTRENAMIENTO Y <br/> CONSULTORÍAS<br/> APRENDER HACIENDO
+          <Text variant="kitTitle" mt={isMobile?"":"5em"} fontSize={isMobile?"2xl":"40px"} lineHeight={isMobile?"7":"10"} textTransform={"uppercase"}>
+            Entrenamiento{isMobile?<br/>:" "}Corporativo{isMobile?<br/>:" "}Personalizado
           </Text>
-          <Text variant="kitParraph">{hero.description}</Text>
+          {/* <Text variant="kitParraph">{hero.description}</Text> */}
+          <Text variant="kitParraph">Capacita tus equipos y desarrolla entregables accionables para tu organización. Sesiones ágiles, creativas y colaborativas. <br/> Metodología Aprender Haciendo</Text>
           {/* {setEmail ? (
             <Flex alignItems="center" justifyContent="center" h="299px" p="2em">
               <Text fontSize="20px" textAlign="center">
@@ -57,10 +58,10 @@ const Hero = () => {
             <SmallContactForm setSentEmail={setSentEmail} />
           )} */}
         </Box>
-        <Flex flexDirection="column" justifyContent={isMobile?"flex-start":""}>
+        <Flex flexDirection="column" justifyContent={isMobile?"flex-start":""} alignItems={"center"}>
           <Box
             position="absolute"
-            top="16vh"
+            top="12vh"
             right="200px"
             display={isMobile ? "none" : "block"}
           >
@@ -73,7 +74,7 @@ const Hero = () => {
           </Box>
           <Box
             position="absolute"
-            top="14vh"
+            top="10vh"
             right="320px"
             display={isMobile ? "none" : "block"}
           >
@@ -86,7 +87,7 @@ const Hero = () => {
           </Box>
           <Box
             position="absolute"
-            top="15vh"
+            top="11vh"
             right="440"
             display={isMobile ? "none" : "block"}
           >
@@ -99,7 +100,7 @@ const Hero = () => {
           </Box>
           <Box
             position="absolute"
-            top="18vh"
+            top="14vh"
             right="570"
             display={isMobile ? "none" : "block"}
           >
@@ -110,7 +111,7 @@ const Hero = () => {
               height={12}
             />
           </Box>
-          <Box display={isMobile ? "block" : "block"} mt={isMobile?"":"6.5em"}>
+          <Box display={isMobile ? "block" : "block"} mt={isMobile?"":"6.5em"} px={isMobile?"4":""}>
             {/* <Image
               style={{ borderRadius: "16px" }}
               src={`/images/hero/${hero.picture}`}
@@ -118,7 +119,7 @@ const Hero = () => {
               width={436}
               height={290}
             /> */}
-            <video width={436} height={290} style={{ borderRadius: "16px" }} src="/videos/rula_clip.mp4" autoPlay loop muted/>    
+            <video width={530} height={350} style={{ borderRadius: "16px" }} src="/videos/rula_clip.mp4" autoPlay loop muted/>    
           </Box>
         </Flex>
       </Flex>
