@@ -16,13 +16,14 @@ const Hero = () => {
         backgroundImage="/assets/hero-bg.png"
         backgroundSize="cover"
         minHeight={isMobile ? "100vh" : "50vh"}
-        justifyContent={isMobile?"center":"space-evenly"}
+        justifyContent={isMobile?"flex-start":"space-evenly"}
         alignItems="center"
         flexDirection={isMobile ? "column" : "row"}
+        pt={isMobile?"24":""}
       >
         <Box
           position="absolute"
-          top={isMobile ? "70px" : "100px"}
+          top={isMobile ? "125px" : "100px"}
           left={isMobile ? "230px" : "60px"}
           zIndex="-1"
         >
@@ -41,6 +42,8 @@ const Hero = () => {
           h={isMobile ? "auto" : "553px"}
           m={isMobile ? "0" : "0 0 0 80px "}
           p={isMobile ? "40px 10px" : "0"}
+          position={"relative"}
+
         >
           <Text variant="kitTitle" mt={isMobile?"":"5em"} fontSize={isMobile?"2xl":"40px"} lineHeight={isMobile?"7":"10"} textTransform={"uppercase"}>
             Entrenamiento{isMobile?<br/>:" "}Corporativo{isMobile?<br/>:" "}Personalizado

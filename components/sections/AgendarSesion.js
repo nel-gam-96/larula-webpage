@@ -13,10 +13,10 @@ export default function AgendarSesion() {
                     {/* <Text style={{fontWeight:"600",fontSize:isMobile?"24px":"32px"}}>
                         Sesiones de mentoría
                     </Text> */}
-                    <Text style={{fontSize:isMobile?"32px":"55px"}}>
+                    <Text style={{fontSize:isMobile?"32px":"55px"}} textAlign={isMobile?"center":""}>
                         AGENDA TU SESIÓN
                     </Text>
-                    <Text style={{fontSize:"16px"}} textAlign={"justify"} maxW={"80%"}>
+                    <Text style={{fontSize:"16px"}} textAlign={"justify"} maxW={"80%"} mx={isMobile?"auto":""}>
                     Vive la experiencia de capacitación corporativa Aprender Haciendo. 
                     Déjanos tus datos y nos pondremos en contacto contigo en el menor tiempo posible.
                     </Text>

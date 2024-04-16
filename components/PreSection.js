@@ -50,19 +50,21 @@ export default function PreSection() {
               >
                 Con el apoyo de
               </Text>
-              <Box position="relative" w="95px" h="48px" display="block">
+              <Box position="relative" w={isMobile?"120px":"95px"} h={isMobile?"73px":"48px"} display="block">
                 <Image
                   src="/images/logos/post-it_logo_desktop.svg"
                   alt="post-it"
                   fill
                 />
               </Box>
-              <Box position="relative" w="150px" h="46px" display="block" top={"4px"} left={"-7px"}>
-                <Image src="/images/logos/edulink.png" alt="edulink" fill />
-              </Box>
-              <Box position="relative" w="60px" h="60px" display="block">
+              <Box position="relative" w={isMobile?"100px":"70px"} h={isMobile?"100px":"70px"} display="block">
                 <Image src="/images/logos/acredita.png" alt="edulink" fill />
               </Box>
+              
+              <Box position="relative" w={isMobile?"150px":"150px"} h={isMobile?"46px":"46px"} display="block" top={"4px"} left={"-7px"}>
+                <Image src="/images/logos/edulink.png" alt="edulink" fill />
+              </Box>
+              
             </Flex>
        </Box>
     </>
